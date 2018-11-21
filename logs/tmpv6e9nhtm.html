@@ -1,0 +1,39 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>TypeError</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 3.6.6: /cygdrive/d/usr/bin/python3<br>Wed Nov 21 16:53:57 2018</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file://D:/XamppVirtualHost/dev/mail-formatter/main.py">D:/XamppVirtualHost/dev/mail-formatter/main.py</a> in <strong>&lt;module&gt;</strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;49</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;50</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;51</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;isNextLevel(orig[i:i+R]):<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;52</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;level&nbsp;+=&nbsp;1<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;53</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output&nbsp;+=&nbsp;'&lt;/detail&gt;&lt;detail&gt;&lt;summary&gt;Mail'&nbsp;+&nbsp;str(level)&nbsp;+&nbsp;'&lt;/summary&gt;'<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>isNextLevel</strong>&nbsp;= &lt;function isNextLevel&gt;, <strong>orig</strong>&nbsp;= ['----- Original Message -----', 'Subject: ■全商品に楽天SEOを実施', 'Date: Tue, 20 Nov 2018 18:08:12 +09:00', 'From: consulting@commerce-design.co.jp', 'To: "笑印堂" &lt;shoindo@ep-insho.jp&gt;', 'CC: consulting@commerce-design.co.jp', '長谷川さま', '佐藤さま', '', 'お世話になっております。コマースデザイン 味藤です。', '課題のご報告をありがとうございました。', '', '&gt; マインドマップは初めて使用しましたが、とても見やすく整理できてこれから', '&gt; も活用できそうだと思いました。', '', 'よかったです！', '実際、長谷川さん・佐藤さんは、', 'マップをかなり上手に使われていました。', '', 'マップは、「枝の移動が楽」という特徴がありますから、', ...], <strong>i</strong>&nbsp;= 12, <strong>R</strong>&nbsp;= 20</font></small></td></tr></table><p><strong>TypeError</strong>: isNextLevel() missing 1 required positional argument: 'regex'
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+("isNextLevel() missing 1 required positional argument: 'regex'",)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>with_traceback&nbsp;=
+&lt;built-in method with_traceback of TypeError object&gt;
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "D:/XamppVirtualHost/dev/mail-formatter/main.py", line 51, in &lt;module&gt;
+    if isNextLevel(orig[i:i+R]):
+TypeError: isNextLevel() missing 1 required positional argument: 'regex'
+
+-->
