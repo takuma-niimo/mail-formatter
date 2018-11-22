@@ -2,22 +2,22 @@
 # -*- coding: utf-8 -*-
 # import cgi
 # import cgitb
-# import sys
-# import io
-# import re
+import sys
+import io
+import re
 from browser import document, alert
 # sys.sdtout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-# # Subfunction
-# # -----------
-# def isNextLevel(array, regex):
-#     for x in array:
-#         if not regex.search(x):
-#             return False
-#     return True
+# Subfunction
+# -----------
+def isNextLevel(array, regex):
+    for x in array:
+        if not regex.search(x):
+            return False
+    return True
 
-# def echo(a):
-#     alert(a)
+def echo(a):
+    alert(a)
 
 # # Detail error report
 # # cgitb.enable()
