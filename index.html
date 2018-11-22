@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Mail formatter v.0.1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.rawgit.com/brython-dev/brython/3.6.2/www/src/brython.js"></script>
+  <script src="http://brython.info/src/brython_dist.js"></script>
 </head>
 
-<body>
+<body onload="brython()">
+<script type="text/python" src="script/main.py"></script>
 <header>
 </header>
 
 <article>
   <div id="contain">
-    <form action="./main.py" method="POST">
-      <p><textarea id="mail-text" name="mailtext" cols="100" rows="50"></textarea></p>
-      <p><input type="submit"></p>
-    </form>
+    <p><textarea id="mail-text" name="mailtext" cols="100" rows="50"></textarea></p>
+    <p><button id="format">Let's start!</button></p>
   </div>
 </article>
 
